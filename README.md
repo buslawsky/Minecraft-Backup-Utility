@@ -28,6 +28,7 @@ A professional, zero-configuration Bash script designed for production Minecraft
 
 Before executing the script, ensure that the `p7zip-full` package is installed on your Debian/Ubuntu machine:
 
+```bash
 sudo apt update && sudo apt install p7zip-full -y
 
 📦 Installation & Usage
@@ -36,11 +37,11 @@ sudo apt update && sudo apt install p7zip-full -y
 
     Grant execution permissions via your terminal:
 
-   chmod +x backup.sh
+chmod +x backup.sh
 
-    Run the script manually to test:
-
-   ./backup.sh
+3. **Run the script manually** to test:
+   ```bash
+./backup.sh
 
 A new folder named minecraft_backups will be created inside your server directory, containing timestamped archives like backup_20260606_220000.7z.
 ⏰ Automation via Cron
@@ -49,12 +50,10 @@ To run this backup automatically every day at 04:00 AM, add a cron job:
 
     Open the crontab editor:
 
-   crontab -e
+crontab -e
 
-    Append the following line at the bottom (replace with your actual path):
-
-Plaintext
-
+2. Append the following line at the bottom (replace with your actual path):
+   ```text
    0 4 * * * /home/debian/minecraft_server/backup.sh >/dev/null 2>&1
 
 ⚙️ Configuration Variables
@@ -65,7 +64,7 @@ If you want to tweak the settings, open backup.sh with your preferred editor (na
 
     -mx=5 — Compression level (1 = fastest/largest, 9 = slowest/smallest). 5 is optimized for modern multi-core servers.
 
-    📄 License & Services
+📄 License & Services
 
 This project is open-source under the MIT License.
 
@@ -82,3 +81,6 @@ I offer premium, anonymous freelancing services for Minecraft networks and Web3 
     Performance & Java Flags Optimization (Aikar's Flags)
 
 Contact me via Discord/Telegram or open an issue.
+
+
+---
