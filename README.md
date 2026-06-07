@@ -68,17 +68,7 @@ If you want to tweak the settings, open backup.sh with your preferred editor (na
 
 This project is open-source under the MIT License.
 
-💡 Need Custom Infrastructure Help?
 
-I offer premium, anonymous freelancing services for Minecraft networks and Web3 projects (payable in crypto/USDT/LTC):
-
-    Linux VPS Server Hardening & Security Setup (Debian/Ubuntu)
-
-    Pterodactyl Panel Deployments
-
-    Custom Spigot/Paper Plugin Configurations & Skript Development
-
-    Performance & Java Flags Optimization (Aikar's Flags)
 
 Contact me via Discord/Telegram or open an issue.
 
