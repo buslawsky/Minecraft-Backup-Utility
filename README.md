@@ -40,7 +40,7 @@ sudo apt update && sudo apt install p7zip-full -y
 chmod +x backup.sh
 
 3. **Run the script manually** to test:
-   ```bash
+
 ./backup.sh
 
 A new folder named minecraft_backups will be created inside your server directory, containing timestamped archives like backup_20260606_220000.7z.
@@ -53,7 +53,7 @@ To run this backup automatically every day at 04:00 AM, add a cron job:
 crontab -e
 
 2. Append the following line at the bottom (replace with your actual path):
-   ```text
+  
    0 4 * * * /home/debian/minecraft_server/backup.sh >/dev/null 2>&1
 
 ⚙️ Configuration Variables
